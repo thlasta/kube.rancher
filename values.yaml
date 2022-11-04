@@ -1,0 +1,5 @@
+bootstrapPassword: admin
+hostname: rancher.hlasta.home
+ingress:
+  tls:
+    source: secret
