@@ -168,7 +168,7 @@ spec:
           service:
             name: rancher-dashboard
             port:
-              number: 80
+              number: 8088
         pathType: ImplementationSpecific
   tls:
   - hosts:
