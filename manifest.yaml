@@ -41,7 +41,7 @@ metadata:
     release: rancher-dashboard
 spec:
   ports:
-  - port: 80
+  - port: 8081
     targetPort: 80
     protocol: TCP
     name: http
@@ -64,7 +64,7 @@ metadata:
     heritage: Helm
     release: rancher-dashboard
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: rancher-dashboard
@@ -168,7 +168,7 @@ spec:
           service:
             name: rancher-dashboard
             port:
-              number: 8088
+              number: 8081
         pathType: ImplementationSpecific
   tls:
   - hosts:
